@@ -19,4 +19,12 @@ console.log(
     return a - b;
   })
 );
-// THe
+// THE fisher yates Methods for Array sorting
+const arr2 = ["a", "g", "c", 100, 50, 80, 68, 40, "20", 3, 4];
+for (let a = arr2.length - 1; a > 0; a--) {
+  let j = Math.floor(Math.random() * a);
+  let k = arr2[a];
+  arr2[a] = arr2[j];
+  arr2[j] = k;
+}
+console.log(arr2);
