@@ -28,3 +28,11 @@ for (let a = arr2.length - 1; a > 0; a--) {
   arr2[j] = k;
 }
 console.log(arr2);
+// finding the highest number in an array
+const arr3 = [100, 50, 80, 68, 40, 3, 4];
+const MathFind = (array) => Math.max.apply(null, array);
+console.log(MathFind(arr3));
+// finding the lowest number in an array
+const arr4 = [100, 50, 80, 68, 40, 3, "20", 4];
+const MathFindLow = (array) => Math.min.apply(null, array);
+console.log(MathFindLow(arr4));
